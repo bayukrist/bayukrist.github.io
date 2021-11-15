@@ -58,11 +58,15 @@ a:visited {
 
   .catalog{
     cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
   }
 
   .catalog:hover{
-    transform: translateY(-30px);
-    box-shadow: 10px 10px 5px #aaaaaa;
+    /* transform: translateY(-30px); */
+    transform: scale(1.05);
+    /* box-shadow: 10px 10px 5px #aaaaaa; */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
   }
 
 .nav-link{
