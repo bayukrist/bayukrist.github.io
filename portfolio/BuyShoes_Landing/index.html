@@ -1,0 +1,381 @@
+<html>
+
+<head>
+    <title>BuyShoes</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header-color">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand ms-5 text-light" href="#">BuyShoes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto px-5">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#collections">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#feedback">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn shadow ms-2 my-1 py-1" id="buttonhead" data-toggle="modal"
+                        data-target="#Modal">Sign In</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+                 <!-- Modal -->
+                 <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="Modal" style="color: #3d516c;">Sign In</h3>
+                                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="col-form-label">Email</label>
+                                        <input type="email" class="form-control form-control" required id="inputEmail0"
+                                            placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword" class="col-form-label">Password</label>
+                                        <input type="password" class="form-control form-control" required id="inputPassword0"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" name="rememberMe" value="rememberMe">
+                                        <label for="rememberMe" class="col-form-label">Remember Me</label>
+                                    </div>
+                                </form>
+                                <button type="button" class="btn btn-lg"
+                                    style="background-color: #3d516c; color: white; width: 100%;">Sign
+                                    In</button>
+                                <p class="col-form-label text-center">Or sign in with</p>
+                                <div class="row">
+                                    <div class="col-sm-6 text-center">
+                                        <button type="button" class="btn px-5 my-1"
+                                            style="background-color: #3d516c; color: white;"><i
+                                                class="fab fa-google mx-5"></i></button>
+                                    </div>
+                                    <div class="col-sm-6 text-center">
+                                        <button type="button" class="btn px-5 my-1"
+                                            style="background-color: #3d516c; color: white;"><i
+                                                class="fab fa-facebook-f mx-5"></i></button>
+                                    </div>
+                                </div>
+                                <p class="col-form-label text-center">Dont have an account? <a href="">Sign up here!</a></p>
+                                <br>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+        <!--end navbar-->
+        <br><br><br>
+        <div class="container ps-3 mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-6 ps-3">
+                    <br><br><br><br><br><br>
+                    <h1 class="head mb-3">BuyShoes Web Page</h1>
+                    <h4>Lorem ipsum, dolor sit amet consectetur.</h4>
+                    <h4>Lorem ipsum dolor sit.</h4>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/header-img.png" class="imghead" alt="Header Image">
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+    </div>
+    <br><br>
+    <!--End Header-->
+
+    <!--About-->
+    <div class="container" id="about">
+        <div class="row">
+            <hr class="hr1">
+            <br><br><br>
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h1 class="judul-1 text-center mt-3 mb-5">About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil nesciunt eos dicta. Optio
+                    reprehenderit at dolor laudantium, sed, itaque incidunt dolorem quo voluptatum unde maiores. Sed,
+                    voluptatibus obcaecati doloribus explicabo esse suscipit tempora, mollitia laudantium id vitae quos
+                    rem error, ipsam odit enim soluta assumenda porro iure sit? Quas doloremque aliquam obcaecati, id
+                    odio harum nostrum, error distinctio, beatae quasi voluptates a quam veniam!</p>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow bordercard mb-2">
+                    <div class="card-body">
+                        <p class="card-title ctitle">10</p>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit dolor lorem sit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow bordercard mb-2">
+                    <div class="card-body">
+                        <p class="card-title ctitle">2450</p>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit ipsum dolor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow bordercard mb-2">
+                    <div class="card-body">
+                        <p class="card-title ctitle">105</p>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet conse.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <!--end about-->
+    <br><br><br><br>
+
+    <!--Collections-->
+    <div id="collections">
+        <br>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4 pt-5">
+                    <br><br><br><br><br><br><br><br>
+                    <h1 class="judul-1">Our Collections</h1>
+                    <a href="" class="seemore">See More >></a>
+                </div>
+
+                <div class="col-md-8 py-5">
+                    <div class="row mb-2">
+                        <div class="card-group">
+                            <div class="card shadow mx-1 catalog">
+                                <img src="img/sepatu1.jpg" class="card-img-top imgcatalog" alt="Man Shoes">
+                                <div class="card-body">
+                                    <h5>Man Shoes</h5>
+                                    <h6><small class="text-muted">Last updated 10 mins ago</small></h6>
+                                </div>
+                            </div>
+                            <div class="card shadow mx-1 catalog">
+                                <img src="img/sepatu2.jpg" class="card-img-top imgcatalog" alt="Woman Shoes">
+                                <div class="card-body">
+                                    <h5>Woman Shoes</h5>
+                                    <h6><small class="text-muted">Last updated 23 mins ago</small></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card-group">
+                            <div class="card shadow mx-1 catalog">
+                                <img src="img/sepatu3.jpg" class="card-img-top imgcatalog" alt="Sport Shoes">
+                                <div class="card-body">
+                                    <h5>Sport Shoes</h5>
+                                    <h6><small class="text-muted">Last updated 16 mins ago</small></h6>
+                                </div>
+                            </div>
+                            <div class="card shadow mx-1 catalog">
+                                <img src="img/sepatu4.jpg" class="card-img-top imgcatalog" alt="Kid Shoes">
+                                <div class="card-body">
+                                    <h5>Kid Shoes</h5>
+                                    <h6><small class="text-muted">Last updated 45 mins ago</small></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Collections-->
+
+    <!--Features-->
+    <div id="features">
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <img src="img/ImgFeature.jpg" alt="Image Features" width="100%">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1 class="judul-1 text-center mt-3 mb-5">Features</h1>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card shadow bordercard mb-2 blight">
+                        <div class="card-body">
+                            <p class="card-title"><i class="fa fa-star"></i></p>
+                            <p class="card-text text-muted">Best Quality</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow bordercard mb-2">
+                        <div class="card-body">
+                            <p class="card-title"><i class="fas fa-glasses"></i></p>
+                            <p class="card-text text-muted">Popular Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow bordercard mb-2">
+                        <div class="card-body">
+                            <p class="card-title"><i class="fas fa-check-double"></i></p>
+                            <p class="card-text text-muted">Original Brands</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow bordercard mb-2">
+                        <div class="card-body">
+                            <p class="card-title"><i class="fa fa-shipping-fast"></i></p>
+                            <p class="card-text text-muted">Fast Delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </div>
+    <!--End Features-->
+
+    <!--Feedback-->
+    <div id="feedback">
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <hr class="hr2">
+                <br><br><br>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1 class="judul-1 text-center mt-3 mb-5 text-light">Feedback</h1>
+                    <p class="text-light mb-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vero enim
+                        ullam
+                        reprehenderit expedita
+                        voluptatem, in veniam cupiditate distinctio quos quaerat provident! Non blanditiis eos
+                        praesentium
+                        quod labore, amet iusto quibusdam vitae sapiente deserunt ab at totam, soluta error, est vel
+                        tempora
+                        eaque voluptatibus numquam? Impedit, voluptates asperiores quis excepturi quod neque autem
+                        quidem
+                        alias consequuntur nemo doloribus? Eligendi quaerat adipisci quae rerum officiis neque ea
+                        debitis
+                        amet dolore corporis esse, optio quas aliquid odit! Qui labore facere omnis unde aliquid,
+                        praesentium eos quaenecessitatibus at dolorum a pariatur ipsum veniam?"</p>
+                    <p class="text-dark"><b>Customer #203, 2021</b></p>
+                </div>
+                <br><br><br><br><br>
+                <hr class="hr2">
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <!--end Feedback-->
+
+    <!--Contact-->
+    <div class="container " id="contact">
+        <br>
+        <div class="row pt-3 mb-5">
+            <div class="col-md-5">
+                <img src="img/imageContact.png" class="pe-3 mb-4 mt-5" alt="Image Contact" width="80%" height="50%">
+                <p class="txtContact"><i class="fas fa-map-marker-alt me-2"></i>Lorem Street number 20, Indonesia.</p>
+                <p class="txtContact"><i class="fas fa-phone-alt me-2"></i>+62 8234 666 212</p>
+                <p class="txtContact"><i class="fas fa-envelope me-2"></i>buyshoes@mail.com</p>
+            </div>
+
+            <div class="col-md-7">
+                <h1 class="judul-1 text-center my-3">Contact Us</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-form-label-lg">Email</label>
+                        <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputName" class="col-form-label-lg">Your Name</label>
+                        <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage" class="col-form-label-lg">Message</label>
+                        <textarea class="form-control form-control-lg" rows="5" id="inputMessage"
+                            placeholder="Write Your Message Here"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg mt-4 mb-3 shadow" id="button1">Send Us Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--End Contact-->
+
+    <!--Footer-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row pt-5 pb-3">
+                <div class="col-md-1"></div>
+                <div class="col-md-7">
+                    <h1><b>BuyShoes</b></h1>
+                </div>
+                <div class="col-md-4">
+                    <h4>Stay Connected With</h4>
+                    <br>
+                    <a href="" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="" class="text-light me-3"><i class="fab fa-amazon"></i></a>
+                </div>
+            </div>
+
+            <div class="row pt-5 pb-3">
+                <div class="col-md-1"></div>
+                <div class="col-md-7">
+                    <h5>© 2021 Reserved by Bayu Kristian</h5>
+                </div>
+                <div class="col-md-4">
+                    <h5>powered by <a class="text-light" href="https://www.gamelab.id" target="_blank">Gamelab</a></h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+*{
+    scroll-padding-top: 80px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+nav{
+    background-color: #6ee0e0;
+    font-weight: bold;
+}
+
+nav #navbarNav ul li a{
+    color: white;
+}
+
+nav #navbarNav ul li a:hover{
+    color: rgb(242,138,27);
+}
+
+
+#buttonLogin, #buttonMore, #buttonMessage{
+    background-color: rgb(242,138,27);
+    font-weight: bold;
+    color: white;
+}
+
+#buttonLogin:hover, #buttonMore:hover, #buttonMessage:hover{
+    background-color: white;
+    color: rgb(242,138,27);
+}
+
+.contentOne{
+    background: rgb(242,138,27);
+    background: linear-gradient(90deg, rgb(242,138,27) 2%, rgb(250, 250, 250) 2%);
+}
+
+footer{
+    background-color: #6ee0e0;
+    color: white;
+}
+
+li{
+    margin-top: 10px;
+}
+.fa-instagram,.fa-facebook,.fa-twitter{
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+img{
+    object-fit: cover;
+}
+
+.expertImage{
+    /* width: 200px; 
+    height: 200px;  */
+    height: 300px;
+    border: 10px solid #6ee0e0;
+}
+
+.txtContact{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 25px;
+}

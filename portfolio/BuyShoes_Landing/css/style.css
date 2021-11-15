@@ -1,0 +1,147 @@
+*{
+    font-family: 'Kodchasan', sans-serif;
+    scroll-padding-top: 80px;
+}
+
+.imghead{
+    width: 100%; 
+    height: 100%;
+}
+
+.head{
+    font-size: 55px;
+    color: white;
+    font-weight: bold;
+}
+
+nav{
+    padding-left: 50px;
+    padding-right: 250px;
+    background-color: #3d516c;
+    
+}
+
+.hr1{
+    border: 4px solid #3d516c;
+    border-radius: 2px;
+}
+
+.hr2{
+    border: 4px solid white;
+    border-radius: 2px;
+}
+
+.navbar-brand{
+    font-size: 25px;
+}
+
+.nav-link{
+    font-size: 20px;
+}
+
+.header-color{
+    background: rgb(143,143,143);
+    background: linear-gradient(0deg,rgba(255,255,255,0) 0%, #8f8f8f 1%, #3d516c 100%);
+
+}
+
+.judul-1{
+    font-size: 34px;
+    color: #3d516c;
+    font-weight: bold;
+}
+
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.bordercard,.form-control{
+    width: 100%;
+    border-width: 3px;
+    border-color: #3d516c;
+}
+
+.ctitle{
+    font-size: 30px;
+}
+
+#collections{
+    background: rgb(239, 239, 239);
+}
+
+.catalog{
+    width: 100%;
+    height: 310px;
+}
+
+.imgcatalog{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.seemore{
+    font-size: 28px;
+    color: #3d516c;
+}
+
+#features{
+    background-color: #f6f6f6;
+}
+
+#feedback{
+    background-color:  #3d516c;
+}
+
+#button1{
+    background-color: #3d516c;
+    float: right;
+    color: white;
+}
+
+#button1:hover{
+    background-color: rgb(143,143,143);
+    color: #3d516c;
+}
+
+footer{
+    background-color:  #3d516c;
+    color: white;
+}
+
+.fa-instagram,.fa-facebook,.fa-twitter,.fa-amazon{
+    font-size: 40px;
+}
+
+.fa-star,.fa-glasses,.fa-check-double,.fa-shipping-fast{
+    font-size: 65px;
+    color:  #3d516c;
+}
+
+.fa-facebook-f,.fa-google{
+    font-size: 20px;
+}
+
+#buttonhead{
+    background-color: rgb(239, 239, 239);
+    color: #3d516c;
+    width: 100px;
+    font-size: 18px;
+}
+
+#buttonhead:hover{
+    background-color: white;
+    color: #3d516c;
+}
+
+.modal{
+    position: fixed;
+}
+
+.txtContact{
+    text-align: left;
+    margin-left: 20px;
+}
+

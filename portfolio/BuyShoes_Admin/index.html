@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Admin Page BuyShoes : Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <div class="navigation shadow pt-4">
+        <h3 class="text-center mb-4"><b>BuyShoes</b></h3>
+        <ul class="ul1">
+            <li class="list active">
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#chartSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="fas fa-chart-area"></i>
+                    <span class="title me-5">Charts</span>
+                    <i class="fas fa-caret-down ms-5"></i>
+                </a>
+
+                <ul class="collapse list-unstyled bg-light mt-2" id="chartSubmenu">
+                    <li class="list">
+                        <a href="circular chart.html">
+                            <i class="fas fa-chart-pie"></i>
+                            <span class="title">Total Sale Charts</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="linebar chart.html">
+                            <i class="fas fa-chart-bar"></i>
+                            <span class="title">Revenue Charts</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list">
+                <a href="form.html">
+                    <i class="fas fa-file"></i>
+                    <span class="title">Manage Products</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="galeri.html">
+                    <i class="fas fa-images"></i>
+                    <span class="title">Products</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content2">
+        <nav class="navbar navbar-expand-lg navbar-light py-4 px-5" style="background-color: #f6f6f6;">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="searchBox">
+                            <i class="fa fa-search ms-2" aria-hidden="true"></i>
+                            <input type="text" placeholder="Search here">
+                        </div>
+                    </ul>
+                    <form class="d-flex ps-5">
+                        <a href=""><i class="fas fa-bell mt-3 me-5"></i></a>
+                        <a href=""><i class="fas fa-envelope mt-3 me-5"></i></a>
+                      
+                        <div class="dropdown me-5">
+                            <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" href=""><img src="img/profilepic.png" alt="" style="height: 50px; width: 50px;"></a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="index.html" style="color: #3d516c;"><i class="fas fa-home me-2"></i> Dashboard</a></li>
+                              <li><a class="dropdown-item" href="profile.html" style="color: #3d516c;"><i class="fas fa-user me-2"></i> Profile</a></li>
+                              <li><a class="dropdown-item" href="history.html" style="color: #3d516c;"><i class="fas fa-history me-2"></i> History</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="../BuyShoes_Landing/index.html" style="color: #3d516c;"><i class="fas fa-sign-out-alt me-2"></i> Log Out</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="py-4" style="background-color: #3d516c;">
+            <div class="container-fluid px-4">
+            <div class="row mb-3">
+                <div class="col-md-10">
+                    <h3 class="text-white"><b>Dashboard</b></h3>
+                </div>
+
+                <div class="col-md-2">
+                    <button type="button" class="btn shadow" id="btnReport" data-toggle="modal"
+                    data-target="#modalAddReport">New Report</button>
+                </div>
+            </div>
+            
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card shadow mb-2">
+                        <div class="card-body">
+                            <h4 class="card-title"><b>200</b> <i class="fas fa-shopping-cart"></i></h4>
+                            <p class="card-text text-muted">New Orders</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">More info <i class="fas fa-chevron-circle-right"></i></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow mb-2">
+                        <div class="card-body">
+                            <h4 class="card-title"><b>60%</b> <i class="fas fa-chart-line"></i></h4>
+                            <p class="card-text text-muted">Bounce Rate</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">More info <i class="fas fa-chevron-circle-right"></i></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow mb-2">
+                        <div class="card-body">
+                            <h4 class="card-title"><b>100</b> <i class="fas fa-user-plus"></i></h4>
+                            <p class="card-text text-muted">User Registrations</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">More info <i class="fas fa-chevron-circle-right"></i></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow mb-2">
+                        <div class="card-body">
+                            <h4 class="card-title"><b>200</b> <i class="fas fa-globe"></i></h4>
+                            <p class="card-text text-muted">Unique Visitors</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">More info <i class="fas fa-chevron-circle-right"></i></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalAddReport" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New Report</h5>
+                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body px-4">
+                        <form>
+                                <div class="form-group">
+                                    <label for="inputTitle" class="col-form-label">Title</label>
+                                    <input type="text" class="form-control" placeholder="Enter Report Title Here"
+                                        id="inputTitle">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputImage" class="col-form-label">Image</label>
+                                    <input type="file" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputCategory" class="col-form-label">Detail</label>
+                                    <textarea rows="4" class="form-control" placeholder="Enter Report Detail Here"
+                                        id="inputCategory"></textarea>
+                                </div>
+                
+                          
+                            <button type="submit" class="btn btn-lg btn-primary" style="float: right;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="row py-3">
+                <div class="col-md-7 ps-5">
+                    <div class="row">
+                        <div class="card shadow mb-2">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>Revenue</b>
+                                </h4>
+
+                                <canvas id="revenueChart" width="500" height="300"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card shadow mb-2">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>Task List</b>
+                                </h4>
+                                <ul class="list-group list-group-flush mt-3 mb-2 ms-2">
+                                    <li class="list-group-item"> <input class="form-check-input me-1" type="checkbox"
+                                            value="">
+                                        Lorem ipsum dolor sit. <span class="badge bg-danger"><i
+                                                class="fas fa-clock text-white"></i> 4 mins</span></li>
+                                    <li class="list-group-item"> <input class="form-check-input me-1" type="checkbox"
+                                            value="">
+                                        Lorem ipsum dolor sit amet consectetur. <span class="badge bg-danger"><i
+                                                class="fas fa-clock text-white"></i> 10 mins</span></li>
+                                    <li class="list-group-item">  <input class="form-check-input me-1" type="checkbox" value="">
+                                        Lorem, ipsum dolor. <span class="badge bg-danger"><i
+                                                class="fas fa-clock text-white"></i> 35 mins</span></li>
+                                    <li class="list-group-item"> <input class="form-check-input me-1" type="checkbox" value="">
+                                        Lorem ipsum dolor sit amet. <span class="badge bg-warning"><i
+                                                class="fas fa-clock text-white"></i> 1 day</span></li>
+                                    <li class="list-group-item"> <input class="form-check-input me-1" type="checkbox" value="">
+                                        Lorem ipsum dolor sit amet. <span class="badge bg-warning"><i
+                                                class="fas fa-clock text-white"></i> 1 day</span></li>
+                                </ul>
+
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-end">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                                <button type="button" class="btn" id="btnTask"><i class="fas fa-plus"></i> Add
+                                    Task</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 pe-5">
+                    <div class="card shadow mb-2">
+                        <div class="card-body">
+                            <h4 class="card-title"><b>Total Sales</b></h4>
+                            <br>
+                            <canvas id="totalsaleChart" width="200" height="700"></canvas>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">More info <i class="fas fa-chevron-circle-right"></i></small>
+                        </div>
+                    </div>
+
+                    <div class="card shadow mb-2">
+                        <div class="card-body">
+                            <h4 class="card-title"><b>Report List</b>
+                            </h4>
+                            <ul class="list-group list-group-flush mt-3 mb-2">
+                                <li class="list-group-item">
+                                    Report #1 : <a href="">Lorem ipsum dolor sit amet. </a>
+                                    <span class="badge bg-primary"><i class="fas fa-comment"></i> 2</span></li>
+                                <li class="list-group-item">
+                                    Report #2 : <a href="">Lorem ipsum consectetur adipisicing.</a>
+                                    <span class="badge bg-primary"><i class="fas fa-comment"></i> 1</span></li>
+                                <li class="list-group-item">
+                                    Report #3 : <a href="">Lorem, ipsum. </a>
+                                    <span class="badge bg-primary"><i class="fas fa-comment"></i> 1</span></li>
+                            </ul>
+
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-end">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+    <footer class="text-white">
+        <div class="container-fluid">
+            <div class="row pt-3 pb-2">
+                
+                <div class="col-md-10 ps-4">
+                    <h5><b>Admin BuyShoes</b> © 2021 Reserved by Bayu Kristian</h5>
+                </div>
+                <div class="col-md-2 ps-2">
+                    <h5>powered by <a class="text-light" href="https://www.gamelab.id" target="_blank">Gamelab</a></h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
