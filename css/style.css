@@ -5,8 +5,6 @@ p,h2,h5 {
 h1{
   font-family: 'Bebas Neue', cursive;
   font-size: 140px;
-  /* -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px; */
   color: #434344;
   text-shadow: 
     0px -1px 0px #ccc, -1px 0px 0px #ccc, 
@@ -39,9 +37,6 @@ body {
 .catalog {
   opacity: 0;
   cursor: pointer;
-  /* transition: 0.5s; */
-  /* box-shadow: 2px 2px 5px ; */
-  /* border: 5px solid #2c2b30; */
   border-radius: 10px;
   box-shadow: -3px -3px 10px #ffffff73,
   3px 3px 5px rgba(94,104,121,0.288);
@@ -58,8 +53,6 @@ body {
 .catalog.muncul:hover {
   transform: translateY(-30px);
   transform: scale(1.05);
-  /* box-shadow: 10px 10px 5px #aaaaaa; */
-  /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); */
 }
 
 .card-img-top2 {
@@ -87,7 +80,7 @@ body {
 
 .info h5{
   color: white;
-  font-size: 28px;
+  font-size: 24px;
   transform: scale(1,0);
   transition: all 0.6s ease;
 }
