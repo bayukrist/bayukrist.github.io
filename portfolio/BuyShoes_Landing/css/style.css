@@ -6,12 +6,29 @@
 .imghead{
     width: 100%; 
     height: 100%;
+    transform: scaleX(0.5);
+    opacity: 0;
+    transition: 2s;
 }
 
-.head{
+
+
+.headTitle .head{
     font-size: 55px;
     color: white;
     font-weight: bold;
+    opacity: 0;
+    transition: 2s;
+}
+
+.headTitle h4{
+    opacity: 0;
+    transition: 5s;
+}
+
+.headTitle .head.muncul, .headTitle h4.muncul , .imghead.muncul{
+    transform: scale(1,1);
+    opacity: 1;
 }
 
 nav{
@@ -42,22 +59,54 @@ nav{
 .header-color{
     background: rgb(143,143,143);
     background: linear-gradient(0deg,rgba(255,255,255,0) 0%, #8f8f8f 1%, #3d516c 100%);
+    overflow: hidden;
+}
 
+#about p, #feedback p{
+    opacity: 0;
+    transform: scale(1,0.5);
+    transition: 2s;
+}
+
+#about p.muncul, #feedback p.muncul{
+    transform: scale(1,1);
+    opacity: 1;
 }
 
 .judul-1{
     font-size: 34px;
     color: #3d516c;
     font-weight: bold;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 2s;
 }
 
+.judul-1.muncul{
+    transform: translateY(0px);
+    opacity: 1;
+}
 
 p{
     font-size: 20px;
     text-align: center;
 }
 
-.bordercard,.form-control{
+.bordercard{
+    width: 100%;
+    border-width: 3px;
+    border-color: #3d516c;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: 2s;
+}
+
+.bordercard.muncul, .catalog.muncul{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.form-control{
     width: 100%;
     border-width: 3px;
     border-color: #3d516c;
@@ -74,6 +123,15 @@ p{
 .catalog{
     width: 100%;
     height: 310px;
+    transform: translateY(-5px);
+    opacity: 0;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.catalog.muncul:hover{
+    transform: scale(1.02,1.02);
+    transition: .5s;
 }
 
 .imgcatalog{
@@ -89,6 +147,18 @@ p{
 
 #features{
     background-color: #f6f6f6;
+    overflow: hidden;
+}
+
+#features img{
+    transform: rotate(180deg);
+    opacity: 0;
+    transition: 2.5s;
+}
+
+#features img.muncul{
+    transform: rotate(0deg);
+    opacity: 1;
 }
 
 #feedback{
@@ -145,3 +215,13 @@ footer{
     margin-left: 20px;
 }
 
+#contact img{
+    transform: scale(0.6,0.6);
+    opacity: 0;
+    transition: 2s;
+}
+
+#contact img.muncul{
+    transform: scale(1,1);
+    opacity: 1;
+}

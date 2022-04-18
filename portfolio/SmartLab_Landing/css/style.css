@@ -63,3 +63,43 @@ img{
     margin-left: 100px;
     margin-bottom: 25px;
 }
+
+.card{
+    cursor: pointer;
+    transform: scale(0,0);
+    opacity: 0;
+    transition: 2s;
+}
+
+.card.muncul{
+    transform: scale(1,1);
+    opacity: 1;
+}
+
+.card.muncul:hover{
+    transform: scale(1.05,1.05);
+    transition: .5s;
+}
+
+.HeaderContent h1, .HeaderContent h6, .HeaderContent img, #about img, #contact img{
+    transform: scale(1,0);
+    opacity: 0;
+    transform-origin: bottom;
+    transition: 2s;
+}
+
+.HeaderContent h1.muncul, .HeaderContent h6.muncul, .HeaderContent img.muncul, #about img.muncul, #contact img.muncul{
+    transform: scale(1,1);
+    opacity: 1;
+}
+
+#about li{
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: 1s;
+}
+
+#about li.muncul{
+    transform: translateY(0px);
+    opacity: 1;
+}

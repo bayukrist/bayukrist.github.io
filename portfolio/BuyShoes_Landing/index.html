@@ -11,10 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../../js/jquery.js"></script>
 </head>
 
 <body>
@@ -46,68 +47,68 @@
                     </li>
                     <li class="nav-item">
                         <button type="button" class="btn shadow ms-2 my-1 py-1" id="buttonhead" data-toggle="modal"
-                        data-target="#Modal">Sign In</button>
+                            data-target="#Modal">Sign In</button>
                     </li>
                 </ul>
             </div>
         </nav>
-                 <!-- Modal -->
-                 <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title" id="Modal" style="color: #3d516c;">Sign In</h3>
-                                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="inputEmail" class="col-form-label">Email</label>
-                                        <input type="email" class="form-control form-control" required id="inputEmail0"
-                                            placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputPassword" class="col-form-label">Password</label>
-                                        <input type="password" class="form-control form-control" required id="inputPassword0"
-                                            placeholder="Password">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="checkbox" name="rememberMe" value="rememberMe">
-                                        <label for="rememberMe" class="col-form-label">Remember Me</label>
-                                    </div>
-                                </form>
-                                <button type="button" class="btn btn-lg"
-                                    style="background-color: #3d516c; color: white; width: 100%;">Sign
-                                    In</button>
-                                <p class="col-form-label text-center">Or sign in with</p>
-                                <div class="row">
-                                    <div class="col-sm-6 text-center">
-                                        <button type="button" class="btn px-5 my-1"
-                                            style="background-color: #3d516c; color: white;"><i
-                                                class="fab fa-google mx-5"></i></button>
-                                    </div>
-                                    <div class="col-sm-6 text-center">
-                                        <button type="button" class="btn px-5 my-1"
-                                            style="background-color: #3d516c; color: white;"><i
-                                                class="fab fa-facebook-f mx-5"></i></button>
-                                    </div>
-                                </div>
-                                <p class="col-form-label text-center">Dont have an account? <a href="">Sign up here!</a></p>
-                                <br>
-                            </div>
-            
-                        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="Modal" style="color: #3d516c;">Sign In</h3>
+                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-form-label">Email</label>
+                                <input type="email" class="form-control form-control" required id="inputEmail0"
+                                    placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword" class="col-form-label">Password</label>
+                                <input type="password" class="form-control form-control" required id="inputPassword0"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="rememberMe" value="rememberMe">
+                                <label for="rememberMe" class="col-form-label">Remember Me</label>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-lg"
+                            style="background-color: #3d516c; color: white; width: 100%;">Sign
+                            In</button>
+                        <p class="col-form-label text-center">Or sign in with</p>
+                        <div class="row">
+                            <div class="col-sm-6 text-center">
+                                <button type="button" class="btn px-5 my-1"
+                                    style="background-color: #3d516c; color: white;"><i
+                                        class="fab fa-google mx-5"></i></button>
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <button type="button" class="btn px-5 my-1"
+                                    style="background-color: #3d516c; color: white;"><i
+                                        class="fab fa-facebook-f mx-5"></i></button>
+                            </div>
+                        </div>
+                        <p class="col-form-label text-center">Dont have an account? <a href="">Sign up here!</a></p>
+                        <br>
+                    </div>
+
                 </div>
+            </div>
+        </div>
         <!--end navbar-->
         <br><br><br>
         <div class="container ps-3 mt-5 mb-5">
             <div class="row">
-                <div class="col-md-6 ps-3">
+                <div class="col-md-6 ps-3 headTitle">
                     <br><br><br><br><br><br>
-                    <h1 class="head mb-3">BuyShoes Web Page</h1>
+                    <h1 class="head mb-5">BuyShoes Web Page</h1>
                     <h4>Lorem ipsum, dolor sit amet consectetur.</h4>
-                    <h4>Lorem ipsum dolor sit.</h4>
+                    <h4>Lorem ipsum dolor sit amet.</h4>
                 </div>
                 <div class="col-md-6">
                     <img src="img/header-img.png" class="imghead" alt="Header Image">
@@ -376,6 +377,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

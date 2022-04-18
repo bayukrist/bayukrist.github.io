@@ -10,20 +10,52 @@ $(document).ready(function () {
 });
 
 
-function logIn() {
-    let userEmail = document.querySelector('#inputEmail0').value;
-    let userPass = document.querySelector('#inputPassword0').value;
-    if (!userEmail || !userPass) {
-        window.alert('Please enter your email and password !');
-        Swal.fire({
-            position: 'top',
-            icon: 'error',
-            title: 'Error',
-            text: 'Please enter your email and password !',
-            showConfirmButton: false,
-            timer: 1500
+$(window).on('load', function () {
+
+    $('.HeaderContent h1').addClass('muncul');
+    $('.HeaderContent h6').addClass('muncul');
+    $('.HeaderContent img').addClass('muncul');
+
+});
+
+$(window).scroll(function () {
+    var windowScroll = $(this).scrollTop();
+
+    if (windowScroll > $('#about').offset().top - 700) {
+        $('#about img').addClass('muncul');
+
+        $('#about li').each(function (i) {
+            setTimeout(function () {
+                $('#about li').eq(i).addClass('muncul');
+            }, 100 * i);
         });
-    } else {
-        window.location.href = 'indexDashboard.html';
     }
-}
+
+    if (windowScroll > $('#courses').offset().top - 700) {
+        $('#courses .card').each(function (i) {
+            setTimeout(function () {
+                $('#courses .card').eq(i).addClass('muncul');
+            }, 300 * (i + 1));
+        });
+    }
+
+    if (windowScroll > $('#subjects').offset().top - 700) {
+        $('#subjects .card').each(function (i) {
+            setTimeout(function () {
+                $('#subjects .card').eq(i).addClass('muncul');
+            }, 300 * (i + 1));
+        });
+    }
+
+    if (windowScroll > $('#experts').offset().top - 700) {
+        $('#experts .card').each(function (i) {
+            setTimeout(function () {
+                $('#experts .card').eq(i).addClass('muncul');
+            }, 300 * (i + 1));
+        });
+    }
+
+    if (windowScroll > $('#contact').offset().top - 700) {
+        $('#contact img').addClass('muncul');
+    }
+});
