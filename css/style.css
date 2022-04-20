@@ -95,10 +95,7 @@ body {
 }
 
 .catalog.muncul:hover .info h5{
-  /* transition: all 0.3s ease; */
   transform: scale(1,1);
-  /* opacity: 1; */
-  
 }
 
 .animate{
@@ -170,4 +167,30 @@ li:nth-child(2).fill-color a{
 .HeaderContent.muncul{
   opacity: 1;
   transform: scale(1);
+}
+
+.backButton{
+  color: #f58f7c;
+}
+
+.backButton:hover{
+  color: #b6bbc5;
+}
+
+.ImageContent img{
+  transform: scale(0,0);
+  opacity: 0;
+  transition: 2.5s;
+  box-shadow: -3px -3px 10px #ffffff73,
+  3px 3px 5px rgba(94,104,121,0.288);
+}
+
+.ImageContent img.muncul{
+  transform: scale(1,1);
+  opacity: 1;
+}
+
+.ImageContent img.muncul:hover{
+  transform: scale(1.015,1.015);
+  transition: 0.8s;
 }
